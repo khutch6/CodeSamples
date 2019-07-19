@@ -4,7 +4,7 @@ from pprint import pprint
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # set up connection parameters in a dictionary
-gateway = {"ip": "ubnt.stormwind.systems", "port": "8443"}
+gateway = {"ip": "IP HERE", "port": "8443"}
 
 # set REST API headers
 headers = {"Accept": "application/json",
@@ -14,8 +14,8 @@ loginUrl = 'api/login'
 url = f"https://{gateway['ip']}:{gateway['port']}/{loginUrl}"
 # set username and password
 body = {
-    "username": "knox",
-    "password": "dF4dp0snv3tfb3!"
+    "username": "USER HERE",
+    "password": "PW HERE"
 }
 # Open a session for capturing cookies
 session = requests.Session()
